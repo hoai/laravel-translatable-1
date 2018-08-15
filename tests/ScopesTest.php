@@ -1,7 +1,7 @@
 <?php
 
-use Dimsav\Translatable\Test\Model\Country;
-use Dimsav\Translatable\Test\Model\Vegetable;
+use Hoai\Translatable\Test\Model\Country;
+use Hoai\Translatable\Test\Model\Vegetable;
 
 class ScopesTest extends TestsBase
 {

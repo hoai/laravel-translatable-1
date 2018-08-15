@@ -1,13 +1,13 @@
 {
-    "name": "dimsav/laravel-translatable",
-    "description": "A Laravel package for multilingual models",
+    "name": "hoai/laravel-translatable-main",
+    "description": "Extend a Laravel package for multilingual models",
     "keywords": ["laravel", "translation", "language", "database"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Dimitrios Savvopoulos",
-            "email": "ds@dimsav.com",
-            "homepage": "http://dimsav.com"
+            "name": "nguyen van hoai",
+            "email": "hoaigubkin@gmail.com",
+            "homepage": "http://yanu.org"
         }
     ],
     "require": {
@@ -31,7 +31,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Dimsav\\Translatable\\TranslatableServiceProvider"
+                "Hoai\\Translatable\\TranslatableServiceProvider"
             ]
         }
     }

@@ -1,12 +1,12 @@
 <?php
 
-namespace Dimsav\Translatable;
+namespace Hoai\Translatable;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Database\Query\Builder as QueryBuilder;
-use Dimsav\Translatable\Exception\LocalesNotDefinedException;
+use Hoai\Translatable\Exception\LocalesNotDefinedException;
 
 trait Translatable
 {
@@ -375,7 +375,7 @@ trait Translatable
     /**
      * @param string $key
      *
-     * @throws \Dimsav\Translatable\Exception\LocalesNotDefinedException
+     * @throws \Hoai\Translatable\Exception\LocalesNotDefinedException
      * @return bool
      */
     protected function isKeyALocale($key)
@@ -386,7 +386,7 @@ trait Translatable
     }
 
     /**
-     * @throws \Dimsav\Translatable\Exception\LocalesNotDefinedException
+     * @throws \Hoai\Translatable\Exception\LocalesNotDefinedException
      * @return array
      */
     protected function getLocales()
@@ -394,7 +394,7 @@ trait Translatable
         $localesConfig = (array) config('translatable.locales');
 
         if (empty($localesConfig)) {
-            throw new LocalesNotDefinedException('Please make sure you have run "php artisan config:publish dimsav/laravel-translatable" '.
+            throw new LocalesNotDefinedException('Please make sure you have run "php artisan config:publish Hoai/laravel-translatable" '.
                 ' and that the locales configuration is defined.');
         }
 

@@ -1,15 +1,15 @@
 <?php
 
-use Dimsav\Translatable\Test\Model;
-use Dimsav\Translatable\Test\Model\City;
-use Dimsav\Translatable\Test\Model\Company;
-use Dimsav\Translatable\Test\Model\Country;
-use Dimsav\Translatable\Test\Model\Continent;
-use Dimsav\Translatable\Test\Model\Vegetable;
-use Dimsav\Translatable\Test\Model\CountryStrict;
-use Dimsav\Translatable\Test\Model\CountryGuarded;
-use Dimsav\Translatable\Test\Model\CityTranslation;
-use Dimsav\Translatable\Test\Model\CountryTranslation;
+use Hoai\Translatable\Test\Model;
+use Hoai\Translatable\Test\Model\City;
+use Hoai\Translatable\Test\Model\Company;
+use Hoai\Translatable\Test\Model\Country;
+use Hoai\Translatable\Test\Model\Continent;
+use Hoai\Translatable\Test\Model\Vegetable;
+use Hoai\Translatable\Test\Model\CountryStrict;
+use Hoai\Translatable\Test\Model\CountryGuarded;
+use Hoai\Translatable\Test\Model\CityTranslation;
+use Hoai\Translatable\Test\Model\CountryTranslation;
 
 class TestCoreModelExtension extends TestsBase
 {
@@ -65,7 +65,7 @@ class TestCoreModelExtension extends TestsBase
         $that = $this;
         $event = App::make('events');
         $event->listen('eloquent*', function ($event, $models) use ($that) {
-            return get_class(reset($models)) == 'Dimsav\Translatable\Test\Model\Country' ? false : true;
+            return get_class(reset($models)) == 'Hoai\Translatable\Test\Model\Country' ? false : true;
         });
 
         $country = Country::find(1);
@@ -79,7 +79,7 @@ class TestCoreModelExtension extends TestsBase
         $that = $this;
         $event = App::make('events');
         $event->listen('eloquent*', function ($event, $models) use ($that) {
-            return get_class(reset($models)) == 'Dimsav\Translatable\Test\Model\Continent' ? false : true;
+            return get_class(reset($models)) == 'Hoai\Translatable\Test\Model\Continent' ? false : true;
         });
 
         $continent = new Continent();
