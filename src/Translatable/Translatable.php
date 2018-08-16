@@ -391,10 +391,10 @@ trait Translatable
      */
     protected function getLocales()
     {
-        $localesConfig = (array) config('translatable.locales');
+        $localesConfig = (array) config('app.available_locale');
 
         if (empty($localesConfig)) {
-            throw new LocalesNotDefinedException('Please make sure you have run "php artisan config:publish Hoai/laravel-translatable" '.
+            throw new LocalesNotDefinedException('Please make sure you have in config /app.php available_locale=["en",..] '.
                 ' and that the locales configuration is defined.');
         }
 
