@@ -108,7 +108,7 @@ trait Translatable
      */
     public function getTranslationModelNameDefault()
     {
-        return get_class($this).config('translatable.translation_suffix', 'Translation');
+        return get_class($this).config('content_translatable.translation_suffix', 'Translation');
     }
 
     /**
@@ -132,7 +132,7 @@ trait Translatable
      */
     public function getLocaleKey()
     {
-        return $this->localeKey ?: config('translatable.locale_key', 'locale');
+        return $this->localeKey ?: config('content_translatable.locale_key', 'locale');
     }
 
     /**
@@ -148,7 +148,7 @@ trait Translatable
      */
     private function usePropertyFallback()
     {
-        return $this->useFallback() && config('translatable.use_property_fallback', false);
+        return $this->useFallback() && config('content_translatable.use_property_fallback', false);
     }
 
     /**
@@ -325,7 +325,7 @@ trait Translatable
             }
         }
 
-        return config('translatable.fallback_locale');
+        return config('content_translatable.fallback_locale');
     }
 
     /**
@@ -359,7 +359,7 @@ trait Translatable
             return $this->useTranslationFallback;
         }
 
-        return config('translatable.use_fallback');
+        return config('content_translatable.use_fallback');
     }
 
     /**
@@ -418,7 +418,7 @@ trait Translatable
      */
     protected function getLocaleSeparator()
     {
-        return config('translatable.locale_separator', '-');
+        return config('content_translatable.locale_separator', '-');
     }
 
     /**
@@ -736,7 +736,7 @@ trait Translatable
             return $this->defaultLocale;
         }
 
-        return config('translatable.locale')
+        return config('content_translatable.locale')
             ?: app()->make('translator')->getLocale();
     }
 
@@ -806,6 +806,6 @@ trait Translatable
      */
     private function toArrayAlwaysLoadsTranslations()
     {
-        return config('translatable.to_array_always_loads_translations', true);
+        return config('content_translatable.to_array_always_loads_translations', true);
     }
 }
