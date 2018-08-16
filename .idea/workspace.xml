@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="100230a9-fef9-4e57-bc47-7993089ff616" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Translatable/Translatable.php" afterPath="$PROJECT_DIR$/src/Translatable/Translatable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Translatable/TranslatableServiceProvider.php" afterPath="$PROJECT_DIR$/src/Translatable/TranslatableServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/config/translatable.php" afterPath="$PROJECT_DIR$/src/config/content_translatable.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,21 +16,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="translatable.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/config/translatable.php">
+      <file leaf-file-name="content_translatable.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config/content_translatable.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
+            <state relative-caret-position="81">
               <caret line="105" column="6" lean-forward="false" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Translatable.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Translatable.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Translatable/Translatable.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16032">
-              <caret line="115" column="7" lean-forward="true" selection-start-line="115" selection-start-column="7" selection-end-line="115" selection-end-column="7" />
+            <state relative-caret-position="-34">
+              <caret line="479" column="20" lean-forward="false" selection-start-line="479" selection-start-column="20" selection-end-line="479" selection-end-column="20" />
               <folding>
                 <element signature="e#37#76#0#PHP" expanded="true" />
               </folding>
@@ -52,17 +52,17 @@
         <entry file="file://$PROJECT_DIR$/tests/migrations/2013_11_28_152610_create_tables.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1593">
-              <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+              <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TranslatableServiceProvider.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TranslatableServiceProvider.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Translatable/TranslatableServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="21" column="68" lean-forward="false" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
+            <state relative-caret-position="332">
+              <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -75,6 +75,7 @@
       <find>Dimsav</find>
       <find>locales</find>
       <find>translatable.locales</find>
+      <find>translateOrNew</find>
     </findStrings>
     <replaceStrings>
       <replace>Hoai</replace>
@@ -370,12 +371,12 @@
       <option name="presentableId" value="Default" />
       <updated>1534327186573</updated>
       <workItem from="1534327188573" duration="2727000" />
-      <workItem from="1534405406234" duration="1778000" />
+      <workItem from="1534405406234" duration="2404000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4505000" />
+    <option name="totallyTimeSpent" value="5131000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1380" height="735" extended-state="0" />
@@ -494,7 +495,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/translatable.php">
+    <entry file="file://$PROJECT_DIR$/src/config/content_translatable.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="814">
           <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
@@ -783,34 +784,34 @@
     <entry file="file://$PROJECT_DIR$/tests/migrations/2013_11_28_152610_create_tables.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1593">
-          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Translatable/TranslatableServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="21" column="68" lean-forward="false" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/translatable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="105" column="6" lean-forward="false" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
+          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Translatable/Translatable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16032">
-          <caret line="115" column="7" lean-forward="true" selection-start-line="115" selection-start-column="7" selection-end-line="115" selection-end-column="7" />
+        <state relative-caret-position="-34">
+          <caret line="479" column="20" lean-forward="false" selection-start-line="479" selection-start-column="20" selection-end-line="479" selection-end-column="20" />
           <folding>
             <element signature="e#37#76#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/content_translatable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="105" column="6" lean-forward="false" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Translatable/TranslatableServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>

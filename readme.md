@@ -185,7 +185,7 @@ php artisan config:publish dimsav/laravel-translatable
 
 ### The config file
 
-You can see the options for further customization in the [config file](src/config/translatable.php).
+You can see the options for further customization in the [config file](src/config/content_translatable.php).
 
 ### The translation model
 
